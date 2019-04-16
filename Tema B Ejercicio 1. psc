@@ -1,0 +1,34 @@
+Algoritmo Tema_A_Ejercicio1
+	
+	//Variables
+	Escribir "Ingrese su sueldo : "
+	Leer sueldoB
+	Escribir "Anios de experiencia : " 
+	Leer anioEx
+	
+	//Logica
+	Si anioEx <= 3 
+		Entonces
+		sueldoF = (sueldoB + (sueldoB * 0.04))
+	Fin Si
+	Si (3 < anioEx) y (anioEx <= 5)
+		Entonces
+		sueldoF = (sueldoB + (sueldoB * 0.06))
+	Fin Si
+	Si (5 < anioEx) y (anioEx <= 10) 
+		Entonces
+		sueldoF = (sueldoB + (sueldoB * 0.1))
+	Fin Si	
+	Si 10 < anioEx  
+		Entonces
+		sueldoF = (sueldoB + (sueldoB * 0.15))
+	Fin Si
+	
+	bono = sueldoF - sueldoB
+	
+	//Datos de salida
+	Escribir "Bono : ", bono
+	Escribir "Sueldo Final : ", sueldoF
+	
+	
+FinAlgoritmo
